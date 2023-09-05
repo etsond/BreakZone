@@ -3,7 +3,7 @@
 const sgMail = require('../config/sendgrid');
 
 function sendVerificationEmail(userEmail, verificationToken) {
-  const verificationLink = `http://your-app-url/verify/${verificationToken}`;
+  const verificationLink = `https://rich-tan-chinchilla-garb.cyclic.app/verify-email/${verificationToken}`;
 
   const msg = {
     to: userEmail,
